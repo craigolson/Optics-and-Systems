@@ -17,8 +17,8 @@ https://doi.org/10.1117/12.2305406
 
 The class is intended to support the PyBSM imaging model outlined here:
 
-- LeMaster, D. and Eismann, M., ìpyBSM: A Python package for modeling imaging 
-systems,î Proc. SPIE 10204; Long-Range Imaging II, 1020405 (2017), 
+- LeMaster, D. and Eismann, M., ‚ÄúpyBSM: A Python package for modeling imaging 
+systems,‚Äù Proc. SPIE 10204; Long-Range Imaging II, 1020405 (2017), 
 doi: 10.1117/12.2262561
 
 The calculation methods are based entirely on openly available formalism primarily 
@@ -26,8 +26,8 @@ fromthe following two sources:
 
 - Kopeika, N., [A System Approach to Imaging], SPIE Press, (1998).
 
-- Youngworth, R., Gallagher, B.B., and Stamper, B.L., ìAn overview of power 
-spectral density (PSD) calculations,î Proc. SPIE 5869; Optical Manufacturing 
+- Youngworth, R., Gallagher, B.B., and Stamper, B.L., ‚ÄúAn overview of power 
+spectral density (PSD) calculations,‚Äù Proc. SPIE 5869; Optical Manufacturing 
 and Testing VI, 58690U, (2005) doi: 10.117/12.618478
 
 
@@ -542,7 +542,7 @@ if __name__ == '__main__':
     # import example data series from CSV file
     # 3-columns: time, XLOS, YLOS
     # LOS data are in mm of displacement at the focal plane
-    read_data=pd.read_csv(r'C:\Users\craig\Perforce\craig_LAP-8580GH2_1653\depot\OpticsAndSensors\Tools\python\Data\XY_LOS_TimeSeries.csv')
+    read_data=pd.read_csv(r'[PATH]\XY_LOS_TimeSeries.csv')
     dataAll=(read_data.values).transpose()
     tdat=(dataAll.transpose())[:,0]
     xdat=(dataAll.transpose())[:,1]
